@@ -56,6 +56,12 @@ The first thing we do in the callback, is to select the form element and store i
 Remember to add the class to the `.new-contact-form` to the form element in your HTML file
 {% endhint %}
 
+{% hint style="info" %}
+Also, you have to run **`yarn build`** every time you make changes to your `app.js` file to generate a new `bundle.js` 
+
+Or you can run **`yarn watch`** to watch for changes while you're building the functionalities of your application
+{% endhint %}
+
 Once we get the form element, we register an event listener for form submission. In the callback for this event, we proceed with reading values of all the form input fields and create a `contact` object. Now that we have the object, the last thing we're left to do is persist it. We will cover that in the next section.
 
 #### Additional resources

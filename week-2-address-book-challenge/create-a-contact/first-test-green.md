@@ -59,11 +59,9 @@ In our `openHomePage()` helper method, we do the following:
 
 3. Once we have the page object we can now call the `goto` method on it, and pass the url we want to visit
 
-> {% hint style="info" %}
 > Note that we're using the keyword `await` before every call to puppeteer's objects. Most of the methods on provided as part of [puppeteer's API](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md) return Promise objects. `await` will wait for those promises to be resolved and will assign the response to each variable.
 >
 > Read more about `async` functions [at this link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
-> {% endhint %}
 
 Okay, now let's run cucumber again. The first step should now be green, but there's one small problem. The process stays idle after running all steps and doesn't exit as expected. The issue here is that we're opening a page but not closing it when we're done with it. When working with puppeteer's page object, you should always close the page when you finish working with it.
 

@@ -9,4 +9,5 @@
     * [Refactoring: Click on button step](week-2-address-book-challenge/create-a-contact/refactoring-click-on-button-step.md)
     * [Event handling](week-2-address-book-challenge/create-a-contact/event-handling.md)
     * [Persisting contacts](week-2-address-book-challenge/create-a-contact/persisting-contacts.md)
+    * [Render contacts on the page](week-2-address-book-challenge/create-a-contact/render-contacts-on-the-page.md)
 
