@@ -121,14 +121,14 @@ Next we'll create an npm script to run cucumber. In your `package.json` file add
 ```javascript
   "scripts": {
     "cucumber":
-      "superstatic -p 3000 2> /dev/null & cucumber-js && lsof -ti tcp:3000 | xargs kill"
+      "superstatic -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
   }
 ```
 
 Let's talk a bit about what's going on with that script
 
 ```bash
-superstatic -p 3000 2> /dev/null & cucumber-js && lsof -ti tcp:3000 | xargs kill
+superstatic -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill
 ```
 
 This will do 3 things when executed:
@@ -157,7 +157,7 @@ Your `package.json` should now look something like this:
   },
   "scripts": {
     "cucumber":
-      "superstatic -p 3000 2> /dev/null & cucumber-js && lsof -ti tcp:3000 | xargs kill"
+      "superstatic -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
   }
 }
 ```
@@ -215,7 +215,7 @@ We will use it in our application to combine all Javascript files we'll create i
 Install the following dependencies in the project
 
 ```bash
-$ yarn webpack webpack-cli babel-loader babel-preset-es2015 babel-polyfill babel-register --dev
+$ yarn add webpack webpack-cli babel-loader babel-preset-es2015 babel-polyfill babel-register --dev
 ```
 
 Create webpack config file

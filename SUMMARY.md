@@ -1,6 +1,6 @@
 # Table of contents
 
-* Initial page
+* [Initial page](README.md)
 * [Week 2 - Address Book Challenge](week-2-address-book-challenge/README.md)
   * [Project setup](week-2-address-book-challenge/project-setup.md)
   * [Create a contact](week-2-address-book-challenge/create-a-contact/README.md)
